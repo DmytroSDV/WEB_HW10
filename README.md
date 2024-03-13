@@ -1,3 +1,24 @@
+## Usage:
+  - Run postgres docker container with command:
+
+        docker run --name postg_wh10 -d -h localhost -p 5432:5432 -U postgres -e POSTGRES_PASSWORD=1234567 postgres
+  - Run mongoDb docker container with command:
+
+        docker run --name mongo_wh10 -d -p 27017:27017 mongo
+  - Make migrations by executing two commands from \hw10\ path
+
+        py manage.py makemigrations
+        py manage.py migrate
+  - Create database mongoDb manually with name 'hw10' and first table 'authors'
+  - Import authors.json to 'authors' table manually
+  - Execute \WEB_HW10\hw10\utils\add_quotes_to_mongo.py for creating and filling the 'quotes' table with quotes.json
+  - Execute \WEB_HW10\hw10\utils\migrate1.py for migration all data from mongoDb to postgresDb
+  - Runserver from \hw10\ path:
+
+        py manage.py runserver
+  - Visit localhost:8000/
+
+
 ## Python web #10
 
 У минулій домашній роботі ви виконували скрапінг сайту http://quotes.toscrape.com.
