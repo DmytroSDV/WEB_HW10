@@ -8,6 +8,7 @@
   - Make migrations by executing two commands from \hw10\ path
 
         py manage.py makemigrations
+    
         py manage.py migrate
   - Create database mongoDb manually with name 'hw10' and first table 'authors'
   - Import authors.json to 'authors' table manually
