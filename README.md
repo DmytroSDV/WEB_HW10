@@ -1,4 +1,16 @@
-## Usage:
+## Usage: choose one from two scenarios:
+### 1. First:
+  - Make migrations by executing two commands from \hw10\ path
+
+        py manage.py makemigrations
+    
+        py manage.py migrate
+  - Runserver from \hw10\ path:
+
+        py manage.py runserver
+  - Visit localhost:8000/
+    
+### 2. Second:
   - Run postgres docker container with command:
 
         docker run --name postg_wh10 -d -h localhost -p 5432:5432 -U postgres -e POSTGRES_PASSWORD=1234567 postgres
