@@ -13,7 +13,7 @@
   - Create database mongoDb manually with name 'hw10' and first table 'authors'
   - Import authors.json to 'authors' table manually
   - Execute \WEB_HW10\hw10\utils\add_quotes_to_mongo.py for creating and filling the 'quotes' table with quotes.json
-  - Execute \WEB_HW10\hw10\utils\migrate1.py for migration all data from mongoDb to postgresDb
+  - Execute \WEB_HW10\hw10\utils\migrate_from_mongo.py for migration all data from mongoDb to postgresDb
   - Runserver from \hw10\ path:
 
         py manage.py runserver
